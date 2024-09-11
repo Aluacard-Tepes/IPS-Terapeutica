@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="FACTURA.CSS">
+    <title>facturas IPS</title>
+</head>
+
+<body>
+    <header>
+
+        <img src="../IPS SCRIPS/IPSLOGO.png" alt="Logo IPS">
+
+        <div class="container">
+            <h1>HISTORIA CLÍNICA</h1>
+            <h2> # {{VarID}}</h2>
+
+        </div>
+        </div>
+
+    </header>
+
+
+    <div class="parrafo">
+        <p>Formato de sesiones IPS Terapeutica Integral del mes de Agosto del 2024</p>
+    </div>
+
+
+    <main>
+
+        <div class="cuadro">
+            <p>ID:<span class="variables">{{VarID}}</span></p>
+            <p>Tipo de Documento:<span class="variables"> {{VarTipoID}}</p>
+            <P>Nombre:<span class="variables"> {{VarName}} </P>
+        </div>
+
+
+        <div class="titulo-1">
+            <h2><span class="titulo">DESCRIPCIÓN DE SESIONES TOMADAS</span></h2>
+        </div>
+
+        <table>
+            <tr>
+                <th> ESPECIALIDAD </th>
+                <th>SEMANA 1</th>
+                <th>SEMANA 2</th>
+                <th>SEMANA 3</th>
+                <th>SEMANA 4</th>
+                <th>SEMANA 5</th>
+                <th>SEMANA 6</th>
+                <th>TOTAL</th>
+            </tr>
+
+            <tr>
+                <td> TERAPIA OCUPACIONAL </td>
+                <td> {{VarTOSm1}} </td>
+                <td> {{VarTOSm2}} </td>
+                <td> {{VarTOSm3}} </td>
+                <td> {{VarTOSm4}} </td>
+                <td> {{VarTOSm5}} </td>
+                <td> {{VarTOSm6}} </td>
+                <td class="td-total"> {{VarTOSuma}} </td>
+            </tr>
+
+            <tr>
+                <td> FONOAUDIOLOGIA </td>
+                <td> {{VarFOSm1}} </td>
+                <td> {{VarFOSm2}} </td>
+                <td> {{VarFOSm3}} </td>
+                <td> {{VarFOSm4}} </td>
+                <td> {{VarFOSm5}} </td>
+                <td> {{VarFOSm6}} </td>
+                <td class="td-total"> {{VarFOSuma}} </td>
+            </tr>
+
+            <tr>
+                <td> FISIOTERAPIA </td>
+                <td> {{VarFISm1}} </td>
+                <td> {{VarFISm2}} </td>
+                <td> {{VarFISm3}} </td>
+                <td> {{VarFISm4}} </td>
+                <td> {{VarFISm5}} </td>
+                <td> {{VarFISm6}} </td>
+                <td class="td-total"> {{VarFISuma}} </td>
+            </tr>
+
+            <Tr>
+                <td> PSICOLOGIA </td>
+                <td> {{VarPSSm1}} </td>
+                <td> {{VarPSSm2}} </td>
+                <td> {{VarPSSm3}} </td>
+                <td> {{VarPSSm4}} </td>
+                <td> {{VarPSSm5}} </td>
+                <td> {{VarPSSm6}} </td>
+                <td class="td-total"> {{VarPSSuma}} </td>
+            </Tr>
+
+            <Tr>
+                <td> RH O PNEU </td>
+                <td> {{VarRHSm1}} </td>
+                <td> {{VarRHSm2}} </td>
+                <td> {{VarRHSm3}} </td>
+                <td> {{VarRHSm4}} </td>
+                <td> {{VarRHSm5}} </td>
+                <td> {{VarRHSm6}} </td>
+                <td class="td-total"> {{VarRHSuma}} </td>
+            </Tr>
+
+            <tr>
+                <td> PSICOLOGIA CLINICA </td>
+                <td> {{VarCLSm1}} </td>
+                <td> {{VarCLSm2}} </td>
+                <td> {{VarCLSm3}} </td>
+                <td> {{VarCLSm4}} </td>
+                <td> {{VarCLSm5}} </td>
+                <td> {{VarCLSm6}} </td>
+                <td class="td-total"> {{VarCLSuma}} </td>
+            </tr>
+
+            <tr>
+                <td> T.OCUPACIONAL </td>
+                <td> {{VarTGSm1}} </td>
+                <td> {{VarTGSm2}} </td>
+                <td> {{VarTGSm3}} </td>
+                <td> {{VarTGSm4}} </td>
+                <td> {{VarTGSm5}} </td>
+                <td> {{VarTGSm6}} </td>
+                <td class="td-total"> {{VarTGSuma}} </td>
+            </tr>
+
+        </table>
+
+    </main>
+
+    <footer>
+
+        <div class="suma">
+            <p>SUMA DE SESIONES DE AGOSTO: <span class="suma-total">{{varSumT}}</span></p>
+        </div>
+
+
+        <div class="firma">
+            <p>Firma:
+                ___________________________________________________________________________________________________</p>
+            <p class="condiciones">Acepto que la cantidad de sesiones descritas es la que recibí por parte de la IPS TERAPEUTICA INTEGRAL
+                S.A.S.
+            </p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

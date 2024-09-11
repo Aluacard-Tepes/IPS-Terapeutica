@@ -1,0 +1,119 @@
+
+body {
+    margin-top: 2.5cm;
+    margin-bottom: 2.5cm;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    max-height: 150px; 
+    margin-right: 10px;
+}
+
+.container {
+    position: absolute; /* Establece la posición absoluta */
+    top: 0; /* Coloca el elemento en la parte superior */
+    right: 0; /* Coloca el elemento en la parte derecha */
+    margin: 20px; /* Agrega márgenes para ajustar la posición si es necesario */
+}
+
+h1, h2 {
+    font-size: 50px; /* Reduzco el tamaño de fuente para que quepa en A4 */
+    margin: 0;
+}
+
+.parrafo {
+    font-size: 18px;
+    margin-top: 40px; /* Reduzco el margen superior para ajustarlo mejor */
+}
+
+.cuadro {
+    border: 1px solid #000;
+    padding: 10px;
+    width: auto; /* Ajusto el ancho al 90% para que quepa en A4 */
+    margin: 30px auto; /* Centra el cuadro en la página */
+    table-layout: auto;
+}
+
+.cuadro p {
+    margin: 0;
+    font-size: 20px; /* Reduzco el tamaño de fuente para que quepa en A4 */
+}
+
+.variables {
+    font-weight: bold;
+}
+
+.titulo-1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.titulo {
+    font-size: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+table {
+    width: auto; /* Ajusto el ancho al 100% para que se extienda completamente */
+    border-collapse: collapse;
+    margin-top: 30px; /* Incremento el margen superior */
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 20px; /* Reduzco el padding para ajustar mejor el contenido */
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+th {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.td-total {
+    color: red;
+}
+
+.white {
+    color: #ffff;
+}
+
+.suma {
+    display: block; /* Hace que ocupe todo el ancho disponible */
+    margin-top: 5%;
+    margin-left: 10; /* Mueve el elemento a la derecha */
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.suma-total {
+    font-size: 30px;
+    color: red;
+    
+    
+}
+
+.firma {
+
+    font-weight: bold;
+    padding: 6% 0%;
+}
+
+.condiciones {
+    font-style: italic;
+    
+}
