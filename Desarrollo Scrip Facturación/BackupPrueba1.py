@@ -6,7 +6,7 @@ import os
 import locale
 
 # BASE IPS ESTO CAMBIA POR MES
-BDIps = pd.read_excel('DataBaseIps.xlsx')
+BDIps = pd.read_excel('A:\IPS SCRIPS\Desarrollo Scrip Facturación\DataBaseIps.xlsx')
 
 # Configura la ruta al ejecutable de wkhtmltopdf
 config = pdfkit.configuration(wkhtmltopdf='C:/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe')  # Reemplaza con la ruta correcta
@@ -94,11 +94,11 @@ for i in range(num_filas):
     
     # Variable Suma Total Sesiones
     varSumT = fila['Suma Total']
-    varLogo = 'IPSLOGO.PNG'
+    varLogo = 'A:\IPS SCRIPS\Desarrollo Scrip Facturación\IPSLOGO.PNG'
 
     Env = Environment(loader=FileSystemLoader('./'))
-    template = Env.get_template('FACTURA.HTML')
-
+    template = Env.get_template('A:\\IPS SCRIPS\\Desarrollo Scrip Facturación\\FACTURA.HTML')
+    
     Usuario = {
             'VarID': VarID, 
             'VarTipoID': VarTipID, 
@@ -165,7 +165,7 @@ for i in range(num_filas):
         f.write(html)
     
     options = {
-        'user-style-sheet': 'FACTURA.CSS',
+        'user-style-sheet': 'A:\IPS SCRIPS\Desarrollo Scrip Facturación\FACTURA.CSS',
         'encoding': 'UTF-8',
     }
     

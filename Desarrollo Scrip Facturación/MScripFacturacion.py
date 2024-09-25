@@ -123,9 +123,8 @@ for i in range(num_filas):
     varSumT = fila['Suma Total']
     varLogo = 'IPSLOGO.PNG'
 
-    Env = Environment(loader=FileSystemLoader('./'))
+    Env = Environment(loader=FileSystemLoader('A:/IPS SCRIPS/Desarrollo Scrip Facturación'))
     template = Env.get_template('FACTURA.HTML')
-
 
     Usuario = {
             'VarID': VarID, 
